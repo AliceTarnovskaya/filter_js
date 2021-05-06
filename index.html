@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>plugin</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="island">
+            <div class="island_item">
+                <h3>Затраты</h3>
+                <div class="buttons">
+                    <button class="btn btn-light js_open_filter me-2">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="#filter"></use>
+                        </svg>
+                    </button>
+                    <button class="btn btn-light js_open_form">
+                        <svg width="1em" height="1em">
+                            <use xlink:href="#plus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <form class="form_disable form_filter island_form">
+                <input type="search" class="js_input_text_search me-2 color-black" placeholder="поиск...">
+                <select class="form-select me-2 js-select-sort">
+                    <option value="priority"> по приоритету</option>
+                    <option value="estimate"> по оценке</option>
+                </select>
+            </form>
+            <form class="island_form form  open_form">
+                <input type="text" class="js_input_text me-2" placeholder="введите товар">
+                <input type="number" class="js_input_thing" placeholder="введите количество, шт">
+                <select class="form-select me-2 js-select">
+                    <option value="1">1 звезда</option>
+                    <option value="2">2 звезда</option>
+                    <option value="3">3 звезда</option>
+                    <option value="4">4 звезда</option>
+                    <option value="5">5 звезда</option>
+                </select>
+                <button type="button" class="btn me-2 js_add_info">Добавить</button>
+                <button type="button" class="btn btn-secondary js_close_form">Отмена</button>
+            </form>
+            <div class=" list_wrap">
+                <div class="fallbacks color-w">Список пустой</div>
+            </div>
+        </div>
+    </div>
+    <div class="d-none">
+        <svg id="star" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+            class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg>
+
+        <svg id="plus" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-collection" viewBox="0 0 16 16">
+            <path
+                d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z" />
+        </svg>
+
+        <svg id="filter" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+            class="bi bi-text-paragraph" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z" />
+        </svg>
+    </div>
+    <script src="script.js "></script>
+</body>
+
+</html>

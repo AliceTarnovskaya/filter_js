@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #003D36;
+}
+
+.color-w {
+    color: #fff
+}
+
+.color-black {
+    color: black
+}
+
+h3 {
+    color: #fff
+}
+
+.container {
+    width: 900px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.island_item {
+    display: flex;
+    border-bottom: solid 1px grey;
+    justify-content: space-between;
+    margin: 24px 0;
+    padding: 16px 0;
+}
+
+.island_form {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: solid 1px grey;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.island_form input {
+    padding: 5px 10px;
+}
+
+.open_form {
+    display: none;
+}
+
+.form_disable {
+    display: none;
+}
+
+input {
+    width: 70%;
+    margin: 0 8px 0 0;
+}
+
+.js_add_info {
+    background:#FF9A00;
+}
+
+.fallback:first-child:last-child {
+    display: flex;
+    justify-self: end;
+}
+
+.fallback {
+    display: none
+}
+
+.list_wrap {
+    color: white;
+}
+
+.list_item {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.template {
+    width: 100%;
+}
+
+.island {
+    width: 100%;
+}
